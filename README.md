@@ -37,7 +37,7 @@ Vocabulary Size (unique notes/chords): 55053
 Training samples: 642152
 Validation samples: 160539
 
-We planned to do more tuning/adjustments, but the initial model came out with a very strong performance after some hyperparameter tuning which can be seen in cell 5, "LSTM-CNN Model" section. We added a CNN block to find local musical patterns, added dropout, a custom learning rate, early stopping, and more various techniques we learned throughout the course.
+We had to do significant tuning to get the model to reach the classification numbers that we found. We added a CNN block to find local musical patterns, added dropout, a custom learning rate, early stopping, and more various techniques we learned throughout the course. We tried different models (bidirectional) and used keras tuner to find optimal hyperparameters.
 
 To perform evaluation, we utilized the sklearn library.
 
